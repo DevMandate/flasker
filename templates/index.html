@@ -1,0 +1,17 @@
+<h1>Hello world!!!!!</h1>
+
+<p>This is my first webpage</p>
+<p>My name is {{firstname|capitalize}}</p>
+<p>{{stuff|safe}}</p>
+
+<h3>Favorites Pizza:</h3>
+{% for topping in favorites_pizza %} 
+    {% if topping == 41 %}
+        {{topping + 100}} <br/>
+    {% else %}
+        {{topping}}<br />
+    {% endif %}
+{% endfor %}
+
+<br /><br />
+{{favorites_pizza|reverse}}
